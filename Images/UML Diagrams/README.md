@@ -10,7 +10,7 @@
 3.2.4 [Конвертация валют](#3.2.4)<br>
 
 ### 1. Диаграмма активности<a name="1"></a>
-[Диаграммы активности](https://github.com/steppbol/B-Player/blob/master/docs/Project%20Documentation/UMLDiagrams/Activity/README.md)
+[Диаграммы активности](https://github.com/NikitaTer/CurrConv/blob/master/Images/UML%20Diagrams/Actions/README.md)
 
 ### 2. Диаграмма последовательности<a name="2"></a>
 Диаграмма последовательности основного варианта использования представляет из себя следующую диаграмму:
