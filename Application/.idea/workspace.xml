@@ -1,10 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/app/Models/Parser.java" line="68" />
+    <bookmark url="file://$PROJECT_DIR$/src/app/Models/Parser.java" line="90" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="72a7cd42-f752-446a-af91-4c0b9927c110" name="Default Changelist" comment="" />
+    <list default="true" id="72a7cd42-f752-446a-af91-4c0b9927c110" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/CurrencyWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/CurrencyWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/CurrencyWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/CurrencyWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/CurrencyWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/CurrencyWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Controllers/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Currency.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Currency.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Resources.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Resources.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_Dow_Jones.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_Dow_Jones.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_MICEX.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_MICEX.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_Nasdaq_100.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_Nasdaq_100.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_RTS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Files/Shares_RTS.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Items/CurrencyItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Items/CurrencyItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Items/CurrencyView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Items/CurrencyView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Items/SharesItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Items/SharesItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Parser$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Parser$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Parser$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Parser$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Models/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Views/CurrencyWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Views/CurrencyWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CurrConv/app/Views/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CurrConv/app/Views/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Controllers/CurrencyWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Controllers/CurrencyWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Controllers/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Controllers/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Items/CurrencyItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Items/CurrencyItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Items/CurrencyView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Items/CurrencyView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Items/SharesItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Items/SharesItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/CurrencyWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Views/CurrencyWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/Images/No_Image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/Images/flags/BYN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/Images/flags/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/Images/flags/cross_button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/Images/flags/switch_arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/Images/flags/Я видел Гитлера.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Views/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Views/MainWindow.fxml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,29 +57,31 @@
     <session id="-1077982881">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.1" value="5" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.61" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="fxml" value="3" />
-          <entry key="java" value="17" />
+          <entry key="java" value="23" />
           <entry key="name" value="1" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="23" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="5" />
         </counts>
@@ -47,12 +90,12 @@
         <counts>
           <entry key="dummy" value="13" />
           <entry key="fxml" value="64" />
-          <entry key="java" value="4889" />
+          <entry key="java" value="6016" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4889" />
+          <entry key="JAVA" value="6016" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="XML" value="64" />
         </counts>
@@ -61,30 +104,32 @@
     <session id="-1459051243">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.6" value="4" />
-          <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="6" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="fxml" value="78" />
-          <entry key="java" value="13933" />
+          <entry key="fxml" value="82" />
+          <entry key="java" value="18352" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="13933" />
-          <entry key="XML" value="78" />
+          <entry key="JAVA" value="18352" />
+          <entry key="XML" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="2" />
-          <entry key="java" value="17" />
+          <entry key="fxml" value="4" />
+          <entry key="java" value="32" />
           <entry key="mp" value="1" />
           <entry key="png" value="4" />
         </counts>
@@ -92,9 +137,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="4" />
-          <entry key="JAVA" value="17" />
+          <entry key="JAVA" value="32" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="2" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -126,30 +171,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Controllers/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1669">
-              <caret line="136" selection-start-line="136" selection-end-line="136" />
+            <state relative-caret-position="359">
+              <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
               <folding>
-                <element signature="e#4005#4006#0" expanded="true" />
-                <element signature="e#4050#4051#0" expanded="true" />
+                <element signature="e#2172#2173#0" expanded="true" />
+                <element signature="e#2239#2240#0" expanded="true" />
+                <element signature="e#2394#2395#0" expanded="true" />
+                <element signature="e#2462#2463#0" expanded="true" />
+                <element signature="e#3307#3308#0" expanded="true" />
+                <element signature="e#3352#3353#0" expanded="true" />
+                <element signature="method#getCurrencyList#0;class#MainWindow#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/control/TableView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12937">
-              <caret line="843" column="43" selection-start-line="843" selection-end-line="844" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Controllers/MainController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -157,74 +189,115 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Models/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-882">
-              <caret line="74" column="41" lean-forward="true" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+            <state relative-caret-position="359">
+              <caret line="194" column="9" lean-forward="true" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
               <folding>
-                <element signature="e#5044#5045#0" expanded="true" />
-                <element signature="e#5078#5079#0" expanded="true" />
+                <element signature="e#5271#5272#0" expanded="true" />
+                <element signature="e#5306#5307#0" expanded="true" />
+                <element signature="method#currencyWrite#0;class#Parser#0" />
+                <element signature="method#sharesWrite#0;class#Parser#0" />
+                <element signature="method#resWrite#0;class#Parser#0" />
+                <element signature="method#currencyRead#0;class#Parser#0" />
+                <element signature="method#sharesRead#0;class#Parser#0" />
+                <element signature="method#resRead#0;class#Parser#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Controllers/CurrencyWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="415">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-                <element signature="e#2335#2336#0" expanded="true" />
-                <element signature="e#2364#2365#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Models/Items/SharesItem.java">
+        <entry file="file://$PROJECT_DIR$/src/app/Models/Items/CurrencyItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
+            <state relative-caret-position="291">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <folding>
+                <element signature="e#496#497#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="method#fromString#0;class#CurrencyItem#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/app/Controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+            <state relative-caret-position="41">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/Scene.java">
+        <entry file="file://$PROJECT_DIR$/src/app/Models/Items/CurrencyView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94656">
-              <caret line="6124" selection-start-line="6124" selection-end-line="6124" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/Models/Items/ResItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="153" selection-start-line="153" selection-end-line="153" />
+            <state relative-caret-position="279">
+              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1045#1046#0" expanded="true" />
+                <element signature="e#1072#1073#0" expanded="true" />
+                <element signature="e#1161#1162#0" expanded="true" />
+                <element signature="e#1189#1190#0" expanded="true" />
+                <element signature="e#1239#1240#0" expanded="true" />
+                <element signature="e#1265#1266#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app/Views/MainWindow.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="167" selection-start-line="16" selection-start-column="167" selection-end-line="16" selection-end-column="167" />
+            <state relative-caret-position="1547">
+              <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="18" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/app/Views/CurrencyWindow.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="125" selection-start-line="6" selection-start-column="125" selection-end-line="6" selection-end-column="125" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/app/Models/Converter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/beans/value/ObservableValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="986">
+              <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -275,16 +348,18 @@
         <option value="$PROJECT_DIR$/src/app/Controllers/CurrencyWindow.fxml" />
         <option value="$PROJECT_DIR$/src/app/Models/CurrencyItem.java" />
         <option value="$PROJECT_DIR$/src/app/Views/CurrencyWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/app/Controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/app/Models/Items/CurrencyView.java" />
-        <option value="$PROJECT_DIR$/src/app/Models/Items/CurrencyItem.java" />
-        <option value="$PROJECT_DIR$/src/app/Models/Items/SharesItem.java" />
-        <option value="$PROJECT_DIR$/src/app/Views/MainWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/app/Main.java" />
         <option value="$PROJECT_DIR$/src/app/Models/Items/ResItem.java" />
+        <option value="$PROJECT_DIR$/src/app/Controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/app/Models/Items/SharesItem.java" />
+        <option value="$PROJECT_DIR$/src/app/Main.java" />
         <option value="$PROJECT_DIR$/src/app/Models/Parser.java" />
-        <option value="$PROJECT_DIR$/src/app/Controllers/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/app/Views/MainWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/app/Models/CurrencyLabel.java" />
+        <option value="$PROJECT_DIR$/src/app/Models/Items/CurrencyView.java" />
         <option value="$PROJECT_DIR$/src/app/Controllers/CurrencyWindow.java" />
+        <option value="$PROJECT_DIR$/src/app/Models/Items/CurrencyItem.java" />
+        <option value="$PROJECT_DIR$/src/app/Controllers/MainWindow.java" />
+        <option value="$PROJECT_DIR$/src/app/Models/Converter.java" />
       </list>
     </option>
   </component>
@@ -307,14 +382,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="production" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
@@ -336,6 +422,45 @@
             </path>
             <path>
               <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="Items" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+              <item name="Images" type="462c0819:PsiDirectoryNode" />
+              <item name="flags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CurrConv" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -348,8 +473,8 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/nikit/IdeaProjects/CurrConv/Application/src/app/Models/Items/SharesItem.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542639555368" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543443012197" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -358,14 +483,14 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\IdeaProjects\CurrConv\Application\src\app\Models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nikit\IdeaProjects\CurrConv\Application\src\app\Views\Images\flags" />
       <recent name="C:\Users\nikit\IdeaProjects\CurrConv\Application\src\app\Models" />
       <recent name="C:\Users\nikit\IdeaProjects\CurrConv\Application\src\app\Views" />
       <recent name="C:\Users\nikit\IdeaProjects\CurrConv\Application\src\app\Controllers" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\IdeaProjects\CurrConv\Application\src\app\Models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,17 +558,25 @@
       <workItem from="1542479150062" duration="13187000" />
       <workItem from="1542630030285" duration="3625000" />
       <workItem from="1542635103542" duration="3627000" />
+      <workItem from="1543092432406" duration="1902000" />
+      <workItem from="1543148531580" duration="9307000" />
+      <workItem from="1543235177221" duration="588000" />
+      <workItem from="1543235837934" duration="1466000" />
+      <workItem from="1543242166200" duration="2855000" />
+      <workItem from="1543266755226" duration="706000" />
+      <workItem from="1543323963880" duration="7430000" />
+      <workItem from="1543436886919" duration="3972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98769000" />
+    <option name="totallyTimeSpent" value="126995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13219616" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22121535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -453,7 +586,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -483,16 +616,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/app/Models/Items/ResItem.java</url>
-          <line>108</line>
+          <url>file://$PROJECT_DIR$/src/app/Models/Converter.java</url>
+          <line>35</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="controller" language="JAVA" />
+        <watch expression="el.get(0)" />
+        <watch expression="el.get(0)" />
+        <watch expression="currencyTable.cssFlag" />
       </configuration>
     </watches-manager>
   </component>
@@ -507,140 +643,159 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/stage/Stage.java" />
-    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/BYN.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/Я видел Гитлера.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/BYN.png" />
+    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/Я видел Гитлера.png" />
     <entry file="file://$PROJECT_DIR$/src/app/Controllers/languages.java" />
     <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/Project.mp" />
-    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/cross_button.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/background.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/cross_button.png" />
+    <entry file="file://$PROJECT_DIR$/src/app/Views/Images/flags/background.png" />
     <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/scene/Scene.java" />
     <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/stage/Modality.java" />
-    <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/collections/MapChangeListener.java" />
     <entry file="file://$PROJECT_DIR$/src/app/Models/CurrencyItem.java" />
+    <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/control/TableView.java" />
+    <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/Scene.java" />
+    <entry file="jar://C:/Programs/JDK/src.zip!/java/lang/String.java" />
     <entry file="jar://C:/Programs/JDK/src.zip!/java/util/concurrent/locks/Lock.java" />
-    <entry file="file://$PROJECT_DIR$/src/app/Views/CurrencyWindow.fxml">
+    <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/scene/control/cell/PropertyValueFactory.java" />
+    <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
+    <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
+    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/SharesItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="137" column="41" selection-start-line="137" selection-start-column="41" selection-end-line="137" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#1055#1056#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Models/CurrencyLabel.java" />
+    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/ResItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Views/MainWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1547">
+          <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="18" />
+        </state>
+      </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Views/CurrencyWindow.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="125" selection-start-line="6" selection-start-column="125" selection-end-line="6" selection-end-column="125" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/CurrencyItem.java">
+    <entry file="jar://C:/Programs/JDK/javafx-src.zip!/javafx/beans/value/ObservableValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="986">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/CurrencyView.java">
+    <entry file="file://$PROJECT_DIR$/src/app/Controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="41">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/CurrencyView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38250">
-          <caret line="2408" selection-start-line="2408" selection-end-line="2408" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/control/TableView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12937">
-          <caret line="843" column="43" selection-start-line="843" selection-end-line="844" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Controllers/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/SharesItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="113" column="52" selection-start-line="113" selection-start-column="52" selection-end-line="113" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Programs/Java/jdk1.8.0_191/javafx-src.zip!/javafx/scene/Scene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94656">
-          <caret line="6124" selection-start-line="6124" selection-end-line="6124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Views/MainWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="167" selection-start-line="16" selection-start-column="167" selection-end-line="16" selection-end-column="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/ResItem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="153" selection-start-line="153" selection-end-line="153" />
+        <state relative-caret-position="279">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1161#1162#0" expanded="true" />
+            <element signature="e#1189#1190#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1265#1266#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Models/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="74" column="41" lean-forward="true" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
+        <state relative-caret-position="359">
+          <caret line="194" column="9" lean-forward="true" selection-start-line="194" selection-start-column="9" selection-end-line="194" selection-end-column="9" />
           <folding>
-            <element signature="e#5044#5045#0" expanded="true" />
-            <element signature="e#5078#5079#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/Controllers/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1669">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-          <folding>
-            <element signature="e#4005#4006#0" expanded="true" />
-            <element signature="e#4050#4051#0" expanded="true" />
+            <element signature="e#5271#5272#0" expanded="true" />
+            <element signature="e#5306#5307#0" expanded="true" />
+            <element signature="method#currencyWrite#0;class#Parser#0" />
+            <element signature="method#sharesWrite#0;class#Parser#0" />
+            <element signature="method#resWrite#0;class#Parser#0" />
+            <element signature="method#currencyRead#0;class#Parser#0" />
+            <element signature="method#sharesRead#0;class#Parser#0" />
+            <element signature="method#resRead#0;class#Parser#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/Controllers/CurrencyWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="415">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#762#763#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
-            <element signature="e#2364#2365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Models/Items/CurrencyItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding>
+            <element signature="e#496#497#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="method#fromString#0;class#CurrencyItem#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Controllers/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+          <folding>
+            <element signature="e#2172#2173#0" expanded="true" />
+            <element signature="e#2239#2240#0" expanded="true" />
+            <element signature="e#2394#2395#0" expanded="true" />
+            <element signature="e#2462#2463#0" expanded="true" />
+            <element signature="e#3307#3308#0" expanded="true" />
+            <element signature="e#3352#3353#0" expanded="true" />
+            <element signature="method#getCurrencyList#0;class#MainWindow#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/Models/Converter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

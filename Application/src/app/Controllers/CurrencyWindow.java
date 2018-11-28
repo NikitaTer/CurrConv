@@ -1,87 +1,46 @@
 package app.Controllers;
 
-import app.Models.Items.CurrencyView;
+import app.Models.Items.*;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
-import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class CurrencyWindow implements Initializable {
 
-    @FXML private ScrollPane currencyScroll;
-    @FXML private Label choiceCurrencyLabel;
+    @FXML
+    private ScrollPane currencyScroll;
     private VBox vBox;
 
     private MainController controller;
     private boolean isLeft;
-    private EventHandler<MouseEvent> hBoxEvent;
+    private ArrayList<CurrencyItem> currencyItemsList;
 
-    public CurrencyWindow(MainController controller) {
+    public CurrencyWindow(MainController controller, boolean isLeft, ArrayList<CurrencyItem> currencyItemsList) {
         this.controller = controller;
+        this.isLeft = isLeft;
+        this.currencyItemsList = currencyItemsList;
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        changeLanguage();
-        vBox = new VBox(10);
+        vBox = new VBox(5);
+        for (CurrencyItem currencyItem : currencyItemsList) {
+            CurrencyView currencyView = new CurrencyView(currencyItem.getName(), currencyItem.getRName());
+            currencyView.getHBox().setOnMouseClicked(new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    controller.getMainWindowController().setCurrency(isLeft, currencyView.getName(), currencyView.getRName(currencyView.getName()), currencyView.isNoImage());
+                    controller.closeCurrencyWindow();
+                }
+            });
+            vBox.getChildren().add(currencyView.getHBox());
+        }
         currencyScroll.setContent(vBox);
-        File file = new File(String.valueOf(getClass().getResource("src/app/Views/Images/flags/USD.png")));
-        CurrencyView second;
-        if (file.exists()) {
-            second = new CurrencyView("Белорусский рубль", file.getPath());
-        } else {
-            second = new CurrencyView("Белорусский рубль",null);
-        }
-
-        file = new File(String.valueOf(getClass().getResource("src/app/Views/Images/flags/USD.png")));
-        CurrencyView first;
-        if (file.exists()) {
-            first = new CurrencyView("Доллар США", file.getPath());
-        } else {
-            first = new CurrencyView("Доллар США",null);
-        }
-
-
-        first.getHBox().setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                controller.getMainWindowController().setCurrency(isLeft, first.getUrl());
-                controller.closeCurrencyWindow();
-            }
-        });
-
-        second.getHBox().setOnMouseClicked(new EventHandler<MouseEvent>() {
-            @Override
-            public void handle(MouseEvent event) {
-                controller.getMainWindowController().setCurrency(isLeft, second.getUrl());
-                controller.closeCurrencyWindow();
-            }
-        });
-
-        vBox.getChildren().addAll(first.getHBox(), second.getHBox());
-    }
-
-    public void setLeft(boolean left) {
-        isLeft = left;
-    }
-
-    public void changeLanguage() {
-        switch (controller.getLanguage()) {
-            case RUS:
-                choiceCurrencyLabel.setText("Выбор валюты");
-                break;
-
-            case ENG:
-                choiceCurrencyLabel.setText("Currency selection");
-                break;
-
-            default: break;
-        }
     }
 }

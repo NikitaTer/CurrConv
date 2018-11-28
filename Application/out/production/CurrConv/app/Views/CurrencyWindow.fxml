@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Label fx:id="choiceCurrencyLabel" layoutX="259.0" layoutY="14.0" text="Выбор валюты" />
+      <Label layoutX="259.0" layoutY="14.0" text="Выберете валюту" />
       <ScrollPane fx:id="currencyScroll" layoutX="200.0" layoutY="100.0" prefHeight="319.0" prefWidth="590.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" />
    </children>
 </AnchorPane>

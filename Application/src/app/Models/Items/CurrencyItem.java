@@ -1,7 +1,5 @@
 package app.Models.Items;
 
-import javafx.collections.ObservableArray;
-
 public class CurrencyItem {
     private String name;
     private double buy;
@@ -24,6 +22,27 @@ public class CurrencyItem {
 
     public String getName() {
         return name;
+    }
+
+    public String getRName() {
+        switch (name) {
+            case "10 китайских юаней":
+                return "Китайская юань";
+            case "10 польских злотых":
+                return "Польский злотый";
+            case "10 шведских крон":
+                return "Шведская крона";
+            case "100 йен":
+                return "Йена";
+            case "100 российских рублей":
+                return "Российский рубль";
+            case "100 украинских гривен":
+                return "Украинская гривна";
+            case "100 чешских крон":
+                return "Чешская крона";
+            default:
+                return name;
+        }
     }
 
     public void setName(String name) {
@@ -86,7 +105,7 @@ public class CurrencyItem {
         }
 
         String tempName = temp.substring(0, i);
-        tempName.replaceAll("\"", "");
+        tempName = tempName.substring(1);
         temp = temp.substring(i + 2);
         String[] temps = temp.split(" ");
         name = tempName;

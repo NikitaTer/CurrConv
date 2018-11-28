@@ -1,8 +1,9 @@
 package app.Models;
 
+import app.Controllers.MainController;
 import app.Models.Items.*;
+import javafx.application.Platform;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableArray;
 import javafx.collections.ObservableList;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -10,7 +11,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.*;
-import java.util.ArrayList;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.concurrent.locks.Lock;
 
 public class Parser {
@@ -30,14 +32,19 @@ public class Parser {
     private volatile ObservableList<SharesItem>[] sharesLists;
     private volatile ObservableList<ResItem>[] resLists;
 
+    private MainController controller;
+
 
     Thread currencyThread, quotesThread;
     private volatile boolean isRunning = false;
+    private volatile boolean isConnection = true;
     private Lock currencyLock, quotesLock;
 
     public Parser(Lock currencyLock, Lock quotesLock) {
         this.currencyLock = currencyLock;
         this.quotesLock = quotesLock;
+        if (!isConnection)
+            isConnection = true;
         currencyList = FXCollections.observableArrayList();
         sharesLists = new ObservableList[4];
         sharesLists[0] = FXCollections.observableArrayList();
@@ -60,6 +67,10 @@ public class Parser {
         currencyRead();
         sharesRead();
         resRead();
+    }
+
+    public void setController(MainController controller) {
+        this.controller = controller;
     }
 
     public synchronized void start() {
@@ -138,11 +149,29 @@ public class Parser {
     private void currencyUpdate() {
         try {
             currencyDoc = Jsoup.connect(currencyUrl).get();
+            if (!isConnection){
+                isConnection = true;
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        controller.getMainWindowController().changeStatus(isConnection);
+                    }
+                });
+            }
         } catch (IOException e) {
-            e.printStackTrace();
+            if (isConnection){
+                isConnection = false;
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        controller.getMainWindowController().changeStatus(isConnection);
+                    }
+                });
+            }
+            return;
         }
         Elements el = currencyDoc.getElementsByTag("tbody");
-        el = el.eq(3);
+        el = el.eq(2);
         el = el.get(0).getElementsByTag("tr");
         int i = 0;
         for (Element element : el) {
@@ -170,8 +199,26 @@ public class Parser {
         for (int i = 0; i < sharesLists.length; i++) {
             try {
                 sharesDocs[i] = Jsoup.connect(sharesUrls[i]).get();
+                if (!isConnection){
+                    isConnection = true;
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            controller.getMainWindowController().changeStatus(isConnection);
+                        }
+                    });
+                }
             } catch (IOException e) {
-                e.printStackTrace();
+                if (isConnection){
+                    isConnection = false;
+                    Platform.runLater(new Runnable() {
+                        @Override
+                        public void run() {
+                            controller.getMainWindowController().changeStatus(isConnection);
+                        }
+                    });
+                }
+                return;
             }
             Elements el = sharesDocs[i].getElementsByTag("tbody");
             el = el.eq(4);
@@ -204,8 +251,26 @@ public class Parser {
     private void resUpdate() {
         try {
             resDoc = Jsoup.connect(resUrl).get();
+            if (!isConnection){
+                isConnection = true;
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        controller.getMainWindowController().changeStatus(isConnection);
+                    }
+                });
+            }
         } catch (IOException e) {
-            e.printStackTrace();
+            if (isConnection){
+                isConnection = false;
+                Platform.runLater(new Runnable() {
+                    @Override
+                    public void run() {
+                        controller.getMainWindowController().changeStatus(isConnection);
+                    }
+                });
+            }
+            return;
         }
         Elements el = resDoc.getElementsByTag("tbody");
         el = el.eq(1);

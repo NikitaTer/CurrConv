@@ -135,7 +135,7 @@ public class SharesItem {
         }
 
         String tempName = temp.substring(0, i);
-        tempName.replaceAll("\"", "");
+        tempName = tempName.substring(1);
         temp = temp.substring(i + 2);
         String[] temps = temp.split(" ");
         name = tempName;

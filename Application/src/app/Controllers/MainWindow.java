@@ -1,50 +1,58 @@
 package app.Controllers;
 
-import app.Models.Items.CurrencyItem;
-import app.Models.Items.ResItem;
-import app.Models.Items.SharesItem;
+import app.Models.Converter;
+import app.Models.Items.*;
 import app.Models.Parser;
 import javafx.beans.binding.Bindings;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
-import javax.swing.text.TabableView;
-import java.io.IOException;
 import java.net.URL;
-import java.util.Observable;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class MainWindow implements Initializable {
 
-    @FXML private ImageView leftFlag;
-    @FXML private ImageView rightFlag;
-    @FXML private Label leftLabel;
-    @FXML private Label rightLabel;
-    @FXML private ChoiceBox<Languages> languageBox;
-    @FXML private AnchorPane currencyPane;
-    @FXML private AnchorPane sharesPane;
-    @FXML private AnchorPane resPane;
-    @FXML private ScrollPane currencyScrollPane;
-    @FXML private ScrollPane sharesScrollPane;
-    @FXML private ScrollPane resScrollPane;
+    @FXML
+    private ImageView leftFlag;
+    @FXML
+    private ImageView rightFlag;
+    @FXML
+    private Label leftLabel;
+    @FXML
+    private Label rightLabel;
+    @FXML
+    private AnchorPane currencyPane;
+    @FXML
+    private AnchorPane sharesPane;
+    @FXML
+    private AnchorPane resPane;
+    @FXML
+    private ScrollPane currencyScrollPane;
+    @FXML
+    private ScrollPane sharesScrollPane;
+    @FXML
+    private ScrollPane resScrollPane;
+    @FXML
+    private Label statusLabel;
+    @FXML
+    private TextField rightNum;
+    @FXML
+    private TextField leftNum;
     private Lock currencyLock, quotesLock;
 
     private TableView<CurrencyItem> currencyTable;
@@ -53,6 +61,7 @@ public class MainWindow implements Initializable {
     private ChoiceBox<String> choiceBox;
 
     private Parser parser;
+    private Converter converter;
 
     private MainController controller;
 
@@ -60,43 +69,23 @@ public class MainWindow implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         currencyLock = new ReentrantLock(true);
         quotesLock = new ReentrantLock(true);
+        converter = new Converter(leftNum, rightNum, this);
+
         leftFlag.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                try {
-                    currencyChange(true);
-                }
-                catch (IOException ex) {
-                    ex.printStackTrace();
-                }
+                controller.openCurrencyWindow(true);
             }
         });
 
         rightFlag.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                try {
-                    currencyChange(false);
-                }
-                catch (IOException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-
-        languageBox.getItems().addAll(Languages.RUS, Languages.ENG);
-        languageBox.setValue(Languages.RUS);
-        languageBox.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<Languages>() {
-            @Override
-            public void changed(ObservableValue<? extends Languages> observable, Languages oldValue, Languages newValue) {
-                if (oldValue == newValue)
-                    return;
-                controller.changesLanguage(newValue);
+                controller.openCurrencyWindow(false);
             }
         });
 
         parser = new Parser(currencyLock, quotesLock);
-        parser.start();
 
         currencyTableInit();
         sharesTableInit();
@@ -114,7 +103,8 @@ public class MainWindow implements Initializable {
 
     public void setController(MainController controller) {
         this.controller = controller;
-
+        parser.setController(controller);
+        parser.start();
         controller.getMain().getPrStage().setOnCloseRequest(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent event) {
@@ -123,29 +113,50 @@ public class MainWindow implements Initializable {
         });
     }
 
-    private void currencyChange(boolean isLeft) throws IOException {
-        FXMLLoader loader = new FXMLLoader(controller.getMain().getClass().getResource("Views/CurrencyWindow.fxml"));
-        Stage currencyWindow = new Stage();
-        if (controller.getLanguage() == Languages.RUS)
-            currencyWindow.setTitle("Выбор валюты");
-        else {
-            currencyWindow.setTitle("Currency selection");
+    public void setCurrency(boolean isLeft, String name, String fName, boolean isNoImage) {
+        if (isLeft) {
+            leftLabel.setText(fName);
+            String path;
+            if (isNoImage)
+                path = "../Views/Images/flags/No_Image.png";
+            else
+                path = "../Views/Images/flags/" + name + ".png";
+            Image image = new Image(getClass().getResourceAsStream(path),100,100,false,true);
+            leftFlag.setImage(image);
+        } else {
+            rightLabel.setText(fName);
+            String path = "../Views/Images/flags/" + name + ".png";
+            Image image = new Image(getClass().getResourceAsStream(path),100,100,false,true);
+            rightFlag.setImage(image);
         }
-        currencyWindow.initModality(Modality.WINDOW_MODAL);
-        currencyWindow.initOwner(controller.getMain().getPrStage());
-        loader.setController(new CurrencyWindow(controller));
-        currencyWindow.setScene(new Scene(loader.load()));
-        controller.setCurrencyWindowController(loader.getController(), currencyWindow);
-        controller.getCurrencyWindowController().setLeft(isLeft);
-
-        currencyWindow.show();
     }
 
-    public void setCurrency(boolean isLeft, String url) {
-        if (isLeft)
-            leftFlag.setImage(new Image(url));
+    public synchronized ArrayList<CurrencyItem> getCurrencyList() {
+        ArrayList<CurrencyItem> currencyList = new ArrayList<>(parser.getCurrencyList());
+        return currencyList;
+    }
+
+    public CurrencyItem getLeftCurrency() {
+        ArrayList<CurrencyItem> currencyList = new ArrayList<>(parser.getCurrencyList());
+        for (CurrencyItem ci : currencyList)
+            if (ci.getRName() == leftLabel.getText())
+                return ci;
+        return null;
+    }
+
+    public CurrencyItem getRightCurrency() {
+        ArrayList<CurrencyItem> currencyList = new ArrayList<>(parser.getCurrencyList());
+        for (CurrencyItem ci : currencyList)
+            if (ci.getRName() == rightLabel.getText())
+                return ci;
+        return null;
+    }
+
+    public synchronized void changeStatus(final boolean isConnection) {
+        if (isConnection)
+            statusLabel.setText("Online");
         else
-            rightFlag.setImage(new Image(url));
+            statusLabel.setText("Offline");
     }
 
     private void currencyTableInit() {
@@ -168,7 +179,7 @@ public class MainWindow implements Initializable {
         sellColumn.setCellValueFactory(new PropertyValueFactory<>("sell"));
         nbrbColumn.setCellValueFactory(new PropertyValueFactory<>("nbrb"));
         currencyTable.getColumns().addAll(nameColumn, buyColumn, sellColumn, nbrbColumn);
-        currencyTable.prefWidthProperty().set(currencyPane.getPrefWidth());
+        currencyTable.setPrefWidth(835);
         currencyTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         try {
             currencyLock.lockInterruptibly();
@@ -255,7 +266,7 @@ public class MainWindow implements Initializable {
         changeColumn.setCellValueFactory(new PropertyValueFactory<>("change"));
         timeColumn.setCellValueFactory(new PropertyValueFactory<>("time"));
         sharesTable.getColumns().addAll(nameColumn, isinColumn, predColumn, valueColumn, volumeColumn, changePerCentColumn, changeColumn, timeColumn);
-        sharesTable.setPrefWidth(sharesPane.getPrefWidth());
+        sharesTable.setPrefWidth(835);
         sharesTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         try {
             quotesLock.lockInterruptibly();
@@ -322,7 +333,7 @@ public class MainWindow implements Initializable {
             timeColumn.setCellValueFactory(new PropertyValueFactory<>("time"));
             unitColumn.setCellValueFactory(new PropertyValueFactory<>("unit"));
             resTables[i].getColumns().addAll(nameColumn, valueColumn, predColumn, changePerCentColumn, changeColumn, timeColumn, unitColumn);
-            resTables[i].setPrefWidth(resPane.getPrefWidth());
+            resTables[i].setPrefWidth(835);
             resTables[i].setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
             try {
                 quotesLock.lockInterruptibly();

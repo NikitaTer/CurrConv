@@ -1,26 +1,21 @@
 package app.Controllers;
 
 import app.Main;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class MainController {
     private MainWindow mainWindowController;
     private CurrencyWindow currencyWindowController;
     private Main main;
     private Stage currencyWindowStage;
-    public Languages language = Languages.RUS;
 
     public MainController() {
 
-    }
-
-    public void setCurrencyWindowController(CurrencyWindow currencyWindowController, Stage currencyWindowStage) {
-        this.currencyWindowController = currencyWindowController;
-        this.currencyWindowStage = currencyWindowStage;
-    }
-
-    public CurrencyWindow getCurrencyWindowController() {
-        return currencyWindowController;
     }
 
     public void setMainWindowController(MainWindow mainWindowController) {
@@ -40,24 +35,26 @@ public class MainController {
         return main;
     }
 
+    public void openCurrencyWindow(boolean isLeft) {
+        FXMLLoader loader = new FXMLLoader(main.getClass().getResource("Views/CurrencyWindow.fxml"));
+        currencyWindowStage = new Stage();
+        currencyWindowStage.setTitle("Выбор валюты");
+        currencyWindowStage.initModality(Modality.WINDOW_MODAL);
+        currencyWindowStage.initOwner(main.getPrStage());
+        currencyWindowController = new CurrencyWindow(this, isLeft, mainWindowController.getCurrencyList());
+        loader.setController(currencyWindowController);
+        try {
+            currencyWindowStage.setScene(new Scene(loader.load()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        currencyWindowStage.show();
+    }
+
     public void closeCurrencyWindow() {
         currencyWindowStage.close();
         currencyWindowController = null;
         currencyWindowStage = null;
     }
-
-    public void changesLanguage(Languages language) {
-        if (this.language == language)
-            return;
-        this.language = language;
-    }
-
-    public Languages getLanguage() {
-        return language;
-    }
-}
-
-enum Languages {
-    RUS,
-    ENG
 }
