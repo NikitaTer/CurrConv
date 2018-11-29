@@ -41,6 +41,15 @@ public class CurrencyWindow implements Initializable {
             });
             vBox.getChildren().add(currencyView.getHBox());
         }
+        CurrencyView currencyView = new CurrencyView("Белорусский рубль", "Белорусский рубль");
+        currencyView.getHBox().setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                controller.getMainWindowController().setCurrency(isLeft, currencyView.getName(), currencyView.getRName(currencyView.getName()), currencyView.isNoImage());
+                controller.closeCurrencyWindow();
+            }
+        });
+        vBox.getChildren().add(currencyView.getHBox());
         currencyScroll.setContent(vBox);
     }
 }

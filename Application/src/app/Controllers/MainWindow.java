@@ -32,6 +32,8 @@ public class MainWindow implements Initializable {
     @FXML
     private ImageView rightFlag;
     @FXML
+    private ImageView crossButton;
+    @FXML
     private Label leftLabel;
     @FXML
     private Label rightLabel;
@@ -70,6 +72,14 @@ public class MainWindow implements Initializable {
         currencyLock = new ReentrantLock(true);
         quotesLock = new ReentrantLock(true);
         converter = new Converter(leftNum, rightNum, this);
+
+        crossButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                leftNum.setText("");
+                rightNum.setText("");
+            }
+        });
 
         leftFlag.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
@@ -113,9 +123,9 @@ public class MainWindow implements Initializable {
         });
     }
 
-    public void setCurrency(boolean isLeft, String name, String fName, boolean isNoImage) {
+    public void setCurrency(boolean isLeft, String name, String rName, boolean isNoImage) {
         if (isLeft) {
-            leftLabel.setText(fName);
+            leftLabel.setText(rName);
             String path;
             if (isNoImage)
                 path = "../Views/Images/flags/No_Image.png";
@@ -124,8 +134,12 @@ public class MainWindow implements Initializable {
             Image image = new Image(getClass().getResourceAsStream(path),100,100,false,true);
             leftFlag.setImage(image);
         } else {
-            rightLabel.setText(fName);
-            String path = "../Views/Images/flags/" + name + ".png";
+            rightLabel.setText(rName);
+            String path;
+            if (isNoImage)
+                path = "../Views/Images/flags/No_Image.png";
+            else
+                path = "../Views/Images/flags/" + name + ".png";
             Image image = new Image(getClass().getResourceAsStream(path),100,100,false,true);
             rightFlag.setImage(image);
         }
@@ -139,16 +153,20 @@ public class MainWindow implements Initializable {
     public CurrencyItem getLeftCurrency() {
         ArrayList<CurrencyItem> currencyList = new ArrayList<>(parser.getCurrencyList());
         for (CurrencyItem ci : currencyList)
-            if (ci.getRName() == leftLabel.getText())
+            if (ci.getRName().equals(leftLabel.getText()))
                 return ci;
+        if (leftLabel.getText().equals("Белорусский рубль"))
+            return new CurrencyItem("Белорусский рубль", 1, 1, 1);
         return null;
     }
 
     public CurrencyItem getRightCurrency() {
         ArrayList<CurrencyItem> currencyList = new ArrayList<>(parser.getCurrencyList());
         for (CurrencyItem ci : currencyList)
-            if (ci.getRName() == rightLabel.getText())
+            if (ci.getRName().equals(rightLabel.getText()))
                 return ci;
+        if (rightLabel.getText().equals("Белорусский рубль"))
+            return new CurrencyItem("Белорусский рубль", 1, 1, 1);
         return null;
     }
 

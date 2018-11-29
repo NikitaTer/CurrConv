@@ -89,12 +89,12 @@
                   <Image url="@Images/cross_button.png" />
                </image>
             </ImageView>
-            <Label fx:id="leftLabel" text="BYN" GridPane.rowIndex="1">
+            <Label fx:id="leftLabel" text="Белорусский рубль" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="rightLabel" alignment="CENTER" text="USD" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Label fx:id="rightLabel" alignment="CENTER" text="Доллар США" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

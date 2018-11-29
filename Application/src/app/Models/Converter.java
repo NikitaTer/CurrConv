@@ -25,16 +25,18 @@ public class Converter {
         leftNum.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (check(newValue.toCharArray(), true))
-                    convertLeft(newValue);
+                if (leftNum.isFocused())
+                    if (check(newValue.toCharArray(), true))
+                        convertLeft(newValue);
             }
         });
 
         rightNum.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if (check(newValue.toCharArray(), false))
-                    convertRight(newValue);
+                if (rightNum.isFocused())
+                    if (check(newValue.toCharArray(), false))
+                        convertRight(newValue);
             }
         });
     }
@@ -174,6 +176,11 @@ public class Converter {
     private boolean check(char[] chars, boolean isLeft) {
         boolean isFirst = true;
         boolean found = false;
+        if (chars.length == 0) {
+            rightNum.setText("");
+            leftNum.setText("");
+            return false;
+        }
         for (char c : chars) {
             if ((c < '0' || c > '9') && c != '.') {
                 if (isLeft)
