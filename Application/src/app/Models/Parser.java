@@ -24,6 +24,9 @@ public class Parser {
                                                     "https://www.finanz.ru/aktsii/realnom-vremeni-spisok/Dow_Jones",
                                                     "https://www.finanz.ru/aktsii/realnom-vremeni-spisok/Nasdaq_100"};
     private static final String resUrl = "https://www.finanz.ru/birzhevyye-tovary/v-realnom-vremeni";
+    /*
+    *Превышение максимального количества элементов в следующих 2 строках
+    */
     private static final String[] filesPaths = {    "src/app/Files/Currency.txt", "src/app/Files/Shares_MICEX.txt", "src/app/Files/Shares_RTS.txt",
                                                     "src/app/Files/Shares_Dow_Jones.txt", "src/app/Files/Shares_Nasdaq_100.txt", "src/app/Files/Resources.txt"};
     private File currencyFile, resFile;
@@ -179,6 +182,9 @@ public class Parser {
                 continue;
             Elements tds = element.getElementsByTag("td");
             String name = tds.get(0).text();
+            /*
+            *Превышение максимального количества элементов в следующих 3 строках
+            */
             double buy = Double.parseDouble(tds.get(1).getElementsByTag("p").text().replace(',', '.').replaceAll(" ", ""));
             double sell = Double.parseDouble(tds.get(2).getElementsByTag("p").text().replace(',', '.').replaceAll(" ", ""));
             String nbrbString = tds.get(3).getElementsByTag("p").get(0).text().replace(',', '.').replaceAll(" ", "");
@@ -234,10 +240,13 @@ public class Parser {
                 String name = tds.get(1).getElementsByTag("a").get(0).text();
                 String isin = tds.get(2).text();
                 double pred = Double.parseDouble(tds.get(3).text().replace(',', '.').replaceAll(" ", ""));
+                /*
+                *Превышение максимального количества элементов в следующих 2 строках
+                */
                 double value = Double.parseDouble(tds.get(4).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", ""));
                 String volume = tds.get(5).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", "");
                 String changePerCent = tds.get(6).getElementsByTag("span").get(0).text().replace(',', '.');
-                String change = tds.get(7).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", "");
+                String change = tds.get(7).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", "");// Превышение максимального количества элементов в строке
                 String time = tds.get(8).getElementsByTag("span").get(0).text();
                 if (sharesLists[i].size() < j + 1)
                     sharesLists[i].add(new SharesItem(name, isin, pred, value, volume, changePerCent, change, time));
@@ -285,10 +294,10 @@ public class Parser {
                 continue;
             }
             String name = tds.get(1).getElementsByTag("a").get(0).text();
-            double value = Double.parseDouble(tds.get(2).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", ""));
+            double value = Double.parseDouble(tds.get(2).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", ""));// Превышение максимального количества элементов в строке
             double pred = Double.parseDouble(tds.get(3).text().replace(',', '.').replaceAll(" ", ""));
             String changePerCent = tds.get(4).getElementsByTag("span").get(0).text().replace(',', '.');
-            String change = tds.get(5).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", "");
+            String change = tds.get(5).getElementsByTag("span").get(0).text().replace(',', '.').replaceAll(" ", "");// Превышение максимального количества элементов в строке
             String time = tds.get(6).getElementsByTag("span").get(0).text();
             String unit = tds.get(7).text();
             if (resLists[j].size() < i + 1)

@@ -203,7 +203,7 @@ public class MainWindow implements Initializable {
             currencyLock.lockInterruptibly();
             currencyTable.setItems(parser.getCurrencyList());
             currencyTable.setFixedCellSize(20);
-            currencyTable.prefHeightProperty().bind(Bindings.size(currencyTable.getItems()).multiply(currencyTable.getFixedCellSize()).add(26));
+            currencyTable.prefHeightProperty().bind(Bindings.size(currencyTable.getItems()).multiply(currencyTable.getFixedCellSize()).add(26)); //превышение максимального количества элементов в строке
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         } finally {
@@ -283,14 +283,14 @@ public class MainWindow implements Initializable {
         changePerCentColumn.setCellValueFactory(new PropertyValueFactory<>("changePerCent"));
         changeColumn.setCellValueFactory(new PropertyValueFactory<>("change"));
         timeColumn.setCellValueFactory(new PropertyValueFactory<>("time"));
-        sharesTable.getColumns().addAll(nameColumn, isinColumn, predColumn, valueColumn, volumeColumn, changePerCentColumn, changeColumn, timeColumn);
+        sharesTable.getColumns().addAll(nameColumn, isinColumn, predColumn, valueColumn, volumeColumn, changePerCentColumn, changeColumn, timeColumn);//превышение максимального количества элементов в строке
         sharesTable.setPrefWidth(835);
         sharesTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         try {
             quotesLock.lockInterruptibly();
             sharesTable.setItems(parser.getSharesLists()[0]);
             sharesTable.setFixedCellSize(20);
-            sharesTable.prefHeightProperty().bind(Bindings.size(sharesTable.getItems()).multiply(sharesTable.getFixedCellSize()).add(26));
+            sharesTable.prefHeightProperty().bind(Bindings.size(sharesTable.getItems()).multiply(sharesTable.getFixedCellSize()).add(26));//превышение максимального количества элементов в строке
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         } finally {
@@ -350,14 +350,14 @@ public class MainWindow implements Initializable {
             changeColumn.setCellValueFactory(new PropertyValueFactory<>("change"));
             timeColumn.setCellValueFactory(new PropertyValueFactory<>("time"));
             unitColumn.setCellValueFactory(new PropertyValueFactory<>("unit"));
-            resTables[i].getColumns().addAll(nameColumn, valueColumn, predColumn, changePerCentColumn, changeColumn, timeColumn, unitColumn);
+            resTables[i].getColumns().addAll(nameColumn, valueColumn, predColumn, changePerCentColumn, changeColumn, timeColumn, unitColumn);//превышение максимального количества элементов в строке
             resTables[i].setPrefWidth(835);
             resTables[i].setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
             try {
                 quotesLock.lockInterruptibly();
                 resTables[i].setItems(parser.getResList()[i]);
                 resTables[i].setFixedCellSize(20);
-                resTables[i].prefHeightProperty().bind(Bindings.size(resTables[i].getItems()).multiply(resTables[i].getFixedCellSize()).add(26));
+                resTables[i].prefHeightProperty().bind(Bindings.size(resTables[i].getItems()).multiply(resTables[i].getFixedCellSize()).add(26));//превышение максимального количества элементов в строке
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             } finally {
