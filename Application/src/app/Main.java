@@ -9,7 +9,9 @@ import javafx.stage.Stage;
 import org.omg.CORBA.PUBLIC_MEMBER;
 
 import java.io.IOException;
-
+/*
+*JavaDoc отсутсвует во всём проекте, что затрудняет понимание кода 
+*/
 public class Main extends Application {
 
     private MainController controller;
