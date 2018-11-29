@@ -10,7 +10,7 @@ public class SharesItem {
     private String change;
     private String time;
 
-    public SharesItem(String name, String isin, double pred, double value, String volume, String changePerCent, String change, String time) {
+    public SharesItem(String name, String isin, double pred, double value, String volume, String changePerCent, String change, String time) { //превышение максимального количества элементов в строке
         this.name = name;
         this.isin = isin;
         this.pred = pred;
@@ -96,7 +96,7 @@ public class SharesItem {
         this.time = time;
     }
 
-    public void setAll(String name, String isin, double pred, double value, String volume, String changePerCent, String change, String time) {
+    public void setAll(String name, String isin, double pred, double value, String volume, String changePerCent, String change, String time) {//превышение максимального количества элементов в строке
         this.name = name;
         this.isin = isin;
         this.pred = pred;
