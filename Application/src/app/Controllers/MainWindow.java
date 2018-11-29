@@ -204,14 +204,6 @@ public class MainWindow implements Initializable {
             currencyTable.setItems(parser.getCurrencyList());
             currencyTable.setFixedCellSize(20);
             currencyTable.prefHeightProperty().bind(Bindings.size(currencyTable.getItems()).multiply(currencyTable.getFixedCellSize()).add(26)); //превышение максимального количества элементов в строке
-                controller.closeCurrencyWindow();
-            }
-        });
-        vBox.getChildren().add(currencyView.getHBox());
-        currencyScroll.setContent(vBox);
-    }
-}
-
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         } finally {
@@ -292,14 +284,6 @@ public class MainWindow implements Initializable {
         changeColumn.setCellValueFactory(new PropertyValueFactory<>("change"));
         timeColumn.setCellValueFactory(new PropertyValueFactory<>("time"));
         sharesTable.getColumns().addAll(nameColumn, isinColumn, predColumn, valueColumn, volumeColumn, changePerCentColumn, changeColumn, timeColumn);//превышение максимального количества элементов в строке
-                controller.closeCurrencyWindow();
-            }
-        });
-        vBox.getChildren().add(currencyView.getHBox());
-        currencyScroll.setContent(vBox);
-    }
-}
-
         sharesTable.setPrefWidth(835);
         sharesTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
         try {
@@ -307,14 +291,6 @@ public class MainWindow implements Initializable {
             sharesTable.setItems(parser.getSharesLists()[0]);
             sharesTable.setFixedCellSize(20);
             sharesTable.prefHeightProperty().bind(Bindings.size(sharesTable.getItems()).multiply(sharesTable.getFixedCellSize()).add(26));//превышение максимального количества элементов в строке
-                controller.closeCurrencyWindow();
-            }
-        });
-        vBox.getChildren().add(currencyView.getHBox());
-        currencyScroll.setContent(vBox);
-    }
-}
-
         } catch (InterruptedException ex) {
             ex.printStackTrace();
         } finally {
@@ -375,14 +351,6 @@ public class MainWindow implements Initializable {
             timeColumn.setCellValueFactory(new PropertyValueFactory<>("time"));
             unitColumn.setCellValueFactory(new PropertyValueFactory<>("unit"));
             resTables[i].getColumns().addAll(nameColumn, valueColumn, predColumn, changePerCentColumn, changeColumn, timeColumn, unitColumn);//превышение максимального количества элементов в строке
-                controller.closeCurrencyWindow();
-            }
-        });
-        vBox.getChildren().add(currencyView.getHBox());
-        currencyScroll.setContent(vBox);
-    }
-}
-
             resTables[i].setPrefWidth(835);
             resTables[i].setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
             try {
@@ -390,14 +358,6 @@ public class MainWindow implements Initializable {
                 resTables[i].setItems(parser.getResList()[i]);
                 resTables[i].setFixedCellSize(20);
                 resTables[i].prefHeightProperty().bind(Bindings.size(resTables[i].getItems()).multiply(resTables[i].getFixedCellSize()).add(26));//превышение максимального количества элементов в строке
-                controller.closeCurrencyWindow();
-            }
-        });
-        vBox.getChildren().add(currencyView.getHBox());
-        currencyScroll.setContent(vBox);
-    }
-}
-
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             } finally {
