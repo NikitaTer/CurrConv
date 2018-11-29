@@ -35,7 +35,7 @@ public class CurrencyWindow implements Initializable {
             currencyView.getHBox().setOnMouseClicked(new EventHandler<MouseEvent>() {
                 @Override
                 public void handle(MouseEvent event) {
-                    controller.getMainWindowController().setCurrency(isLeft, currencyView.getName(), currencyView.getRName(currencyView.getName()), currencyView.isNoImage());
+                    controller.getMainWindowController().setCurrency(isLeft, currencyView.getName(), currencyView.getRName(currencyView.getName()), currencyView.isNoImage()); //превышение максимального количества элементов в строке
                     controller.closeCurrencyWindow();
                 }
             });
@@ -45,7 +45,7 @@ public class CurrencyWindow implements Initializable {
         currencyView.getHBox().setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
-                controller.getMainWindowController().setCurrency(isLeft, currencyView.getName(), currencyView.getRName(currencyView.getName()), currencyView.isNoImage());
+                controller.getMainWindowController().setCurrency(isLeft, currencyView.getName(), currencyView.getRName(currencyView.getName()), currencyView.isNoImage()); //превышение максимального количества элементов в строке
                 controller.closeCurrencyWindow();
             }
         });
