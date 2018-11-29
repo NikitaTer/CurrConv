@@ -9,7 +9,7 @@ public class ResItem {
     private String time;
     private String unit;
 
-    public ResItem(String name, double value, double pred, String changePerCent, String change, String time, String unit) {
+    public ResItem(String name, double value, double pred, String changePerCent, String change, String time, String unit) { //превышение максимального количества элементов в строке
         this.name = name;
         this.value = value;
         this.pred = pred;
@@ -85,7 +85,7 @@ public class ResItem {
         this.unit = unit;
     }
 
-    public void setAll(String name, double value, double pred, String changePerCent, String change, String time, String unit) {
+    public void setAll(String name, double value, double pred, String changePerCent, String change, String time, String unit) { //превышение максимального количества элементов в строке
         this.name = name;
         this.value = value;
         this.pred = pred;
